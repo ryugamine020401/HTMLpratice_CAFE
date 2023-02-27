@@ -4,29 +4,89 @@
         <meta charset="utf-8"/>
         <title>CAFE</title>
         <meta name="description" content="咖啡店" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="icon" type="image/png" href="../img/webicon2.png">
 
         <!-- CSS -->
         <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital@1&display=swap" rel="stylesheet" />
-        <link href="./css/style.css"/>
+        <link rel="stylesheet" href="../css/style.css"/>
 
 
     </head>
 
     <body>
-        <header class="page-header">
-            <h1><a href="index.html"><img src="./img/LOGO.jpg" class="logo" alt="CAFE FIRST PAGE"/></a></h1>
-            <nav>
-                <ul>
-                    <li>News</li>
-                    <li>Menu</li>
-                    <li>Contact</li>
-                    <li>History</li>
-                </ul>
-            </nav>
-        </header>
-    </body>
+        <div id="news" class="big-bg">
+            <header class="page-header wrapper">
+                <h1><a href="../index.html"><img src="../img/LOGO1.png" class="logo" alt="CAFE 首頁"/></a></h1>
+                <nav>
+                    <ul class="main-nav">
+                        <li ><a href="./menu.html">Menu</a></li>
+                        <li ><a href="./contact.html">Contact</a></li>
+                        <li ><a href="./history.html">History</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="wrapper">
+                <h2 class="page-title">News</h2>
+            </div>      
+        </div> <!-- 封面整頁 end...-->
 
+        <div class="news-contents wrapper">
+            <article>
+                主要區域
+                <header class="post-info">
+                    <h2 class="post-title">店內畫作全面更新</h2>
+                    <p class="post-data">2/27 <span>2023</span></p>
+                    <p class="post-cat">類別:店面介紹</p> 
+                </header> 
+                <img src="../img/paraimg.jpg" alt="圖片">
+                <p>
+                    歡迎來到我們的咖啡店！我們位於市中心繁華的街區，提供高品質的咖啡和輕食，
+                    讓您在繁忙的生活中享受一個寧靜舒適的時光。
+                </p>
+                <p>
+                    我們的咖啡由優質的咖啡豆精心烘焙而成，每一杯都是經過我們的咖啡師精心調配，保證為您帶來最美味的口感。
+                    此外，我們也提供多種口味的茶飲，如綠茶、紅茶、花草茶等，
+                    滿足您對於不同茶葉的偏好。我們的輕食也同樣精心製作，包括各式鬆餅、三明治、沙拉等，
+                    讓您在品嘗美味的同時，也能夠保持健康的飲食習慣。
+                    
+                </p>
+                <p>我們的咖啡店環境寬敞明亮，擁有舒適的座椅和簡潔的裝飾，讓您在繁忙的城市中得以放鬆身心。
+                    此外，我們的店內也提供免費的無線網路，讓您隨時隨地都能夠連接到網絡世界。
+                    如果您需要一個安靜的工作環境，我們也為您提供獨立的工作區，讓您能夠專注地完成工作。
+                </p>
+                <p>
+                    總而言之，我們的咖啡店是一個充滿溫馨和舒適的場所，讓您在忙碌的生活中得到放鬆和享受。
+                    我們的團隊將竭誠為您提供最優質的服務，讓您成為我們的忠實客戶。
+                    如果您還沒來過我們的店，請不要猶豫，趕快前來一探究竟吧！
+                </p>
+
+            </article>
+
+            <aside>
+                邊欄
+                <h3 class="sub-title">類別</h3>
+                <ul class="sub-menu">
+                    <li><a href="#"> 店內介紹 </a></li>
+                    <li><a href="#"> 期間限定菜單 </a></li>
+                    <li><a href="#"> 優惠活動 </a></li>
+                    <li><a href="#"> 與顧客對話 </a></li>
+                </ul>
+
+                <h3 class="sub-title">關於本店</h3>
+                <p>
+                    我們的團隊仍然保持著對咖啡的熱愛和對品質的堅持，不斷地追求更好的咖啡和更好的服務。
+                    除了在當地經營咖啡店外，我們也開始向其他城市和國家拓展業務，希望能夠將我們的咖啡品牌和文化帶給更多的人。
+                </p>
+
+            </aside>
+
+        </div>
+        <footer>
+            <div class="wrapper">
+                <p><small>&copy; 2023 Manabox</small></p>
+            </div>
+        </footer> 
+    </body>
 </html>
