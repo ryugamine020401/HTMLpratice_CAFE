@@ -117,7 +117,7 @@ img {
 
 /*主要內容*/
 .news-contents {
-    display: flex;
+    display: flex;      /*artical aside ad*/
     justify-content: space-between;
     margin-bottom: 50px;
 
@@ -128,7 +128,8 @@ img {
 }
 
 article {
-    width: 74%;
+    width: 60%;
+    order: 2;
 }
 article img {
     margin-bottom: 20px;
@@ -137,7 +138,7 @@ article img {
 article p {
     margin-bottom: 2rem;
     font-size: 18px;
-} 
+}
 
 article h2 {
     font-size: 36px;
@@ -179,11 +180,12 @@ article h2 {
 }
 .post-title, .post-cat {
     margin-top: 5px;
-    margin-left: 115px;
+    margin-left: 140px;
 }
 
 aside {
-    width: 22%;
+    width: 15%;
+    order: 3;
 }
 
 .sub-title {
@@ -202,7 +204,7 @@ aside ul {
     margin-bottom: 25px;
 }
 
-aside ul li { 
+aside ul li {
     border-bottom:  1px #ddd solid;
 }
 
@@ -215,6 +217,20 @@ aside ul a {
 aside ul a:hover{
     color: #0bd;
 }
+
+.ad {
+    padding: 20px;
+    width: 17%;
+    order: 1;
+}
+
+.ad img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
 /*頁尾*/
 
 footer {
@@ -258,10 +274,12 @@ footer p{
     article, aside {
         width: 100%;
     }
-    .post-title {
+    .post-title, .post-cat {
         font-family: "Yu Mincho", "YuMincho", serif;
         font-size: 1.4rem;
         font-weight: normal;
+        margin-top: 5px;
+        margin-left: 115px;
     }
     .post-data {
         background: #0bd;
@@ -274,6 +292,52 @@ footer p{
         position: absolute;
         top: 0;
         padding-top: 11px;
-    
+
     }
+
+
+}   /*手機板end*/
+
+
+/* MENU... */
+#menu {
+    background-image: url('../img/menu.jpg');
+    min-height: 100vh;
+
 }
+
+.menu-content {     /*div */
+    max-width: 1100px;
+    margin-top: 10%;
+}
+
+.menu-content .page-title{      /*div h2*/
+    text-align: center;
+}
+
+.menu-content p {
+    font-size: 1.125rem;
+    margin: 10px 0 0;
+
+}
+
+.grid {
+    display: grid;
+    gap:26px;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    margin-top: 6%;
+    margin-bottom: 50px;
+}
+
+.bigbox {
+    /* grid-column: 1 / 3;
+    grid-row: 1 / 3; */
+}
+
+.item {
+    /*width: 222px;*/
+}
+/* MENU... END*/
+
